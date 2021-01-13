@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+		<context:annotation-config/>
+		<context:component-scan base-package="tw.iii"/>		<!-- 意指可以在指定的package下掃描以及註冊javabean,都會自動載入自動為我們將掃描到的 @Component，@Controller，
+																	@Service，@Repository等註解標記的元件註冊到工廠中，來處理我們的請求  -->
+		<mvc:annotation-driven/>							<!-- 當配置了mvc:annotation-driven/後，Spring就知道了我們啟用註解驅動 -->
+		<tx:annotation-driven transaction-manager="transactionManager"/>
+		
+</beans>

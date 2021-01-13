@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 350px;
+    height: 470px;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 5px black;
+    
+}
+form{
+    display: block;
+    position: relative;
+}
+
+h2{
+    font-size: 55px;
+    display: block;
+    text-align: center;
+    color: aliceblue;
+    margin: 50px auto;
+    color:rgb(46, 23, 177);
+}
+.name,.pass{
+    color:black;
+    display:block;
+    background: none;
+    width: 250px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid rgb(69, 66, 235);
+    margin: 35px auto;
+    border-radius: 5px;
+    padding: 5px 5px;
+    outline: none;
+    transition: 0.25s;
+}
+.name:focus,.pass:focus{
+    width: 280px;
+    border-color: rgb(32, 199, 107);
+    background-color: rgba(128, 128, 128, 0.39);
+}
+span{
+    margin-top: 10px;
+    display: block;
+}
+.create{
+    text-decoration: none;
+    color:rgb(46, 23, 177);
+    font-size: 15px;
+
+    
+}
+.create:visited{
+    text-decoration: none;
+    color:white;
+}
+.create:active{
+    color: rgb(116, 36, 243);
+}
+.create:hover{
+    color: rgb(91, 21, 255);
+}
+#btn-submit{
+    display: block;
+    color: rgba(255, 255, 255, 0.74);
+    background: none;
+    width: 85px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 17px;
+    margin: 15px auto;
+    border-radius: 5px;
+    padding: 4px 4px;
+    border: none;
+    transition: 0.25s;
+    cursor: pointer;
+    outline-style:none;
+    background-color: rgb(46, 23, 177);
+}
+#btn-submit:hover{
+    background:rgb(116, 36, 243);
+    color:rgb(49, 49, 49);
+}
+
